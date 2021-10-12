@@ -1,14 +1,15 @@
-import { Specification } from "../model/Specification";
+import { Specification } from "../../model/Specification";
 import {
     ISpecificationsRepository,
     ICreateSpecificationDTO,
-} from "../repositories/ISpecificationRepository";
+} from "../ISpecificationRepository";
 
 class SpecificationsRepository implements ISpecificationsRepository {
     private specifications: Specification[];
     constructor() {
         this.specifications = [];
     }
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     findByName(name: string) {
         const specification = this.specifications.find(
             (specification) => specification.name === name
