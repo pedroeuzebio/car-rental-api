@@ -8,8 +8,6 @@ class User {
     @Column()
     name: string;
     @Column()
-    username: string;
-    @Column()
     email: string;
     @Column()
     password: string;
@@ -18,7 +16,7 @@ class User {
     @Column()
     isAdmin: boolean;
     @Column()
-    crated_at: Date;
+    created_at: Date;
 
     constructor() {
         if (!this.id) {
