@@ -9,7 +9,6 @@ import { CategoriesRepository } from "../../modules/cars/repositories/implementa
 import { SpecificationsRepository } from "../../modules/cars/repositories/implementations/SpecificationsRepository";
 import { ISpecificationsRepository } from "../../modules/cars/repositories/ISpecificationRepository";
 
-
 container.registerSingleton<ICategoriesRepository>(
     "CategoriesRepository",
     CategoriesRepository
