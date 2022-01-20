@@ -1,9 +1,9 @@
 import { compare } from "bcryptjs";
 import { sign } from "jsonwebtoken";
 import { inject, injectable } from "tsyringe";
-import { AppError } from "../../../../errors/AppError";
+import { AppError } from "../../../../shared/errors/AppError";
 
-import { UsersRepository } from "../../repositories/implementations/usersRepository";
+import { UsersRepository } from "../../infra/typeorm/repositories/usersRepository";
 import { IUsersRepository } from "../../repositories/IUsersRepository";
 
 interface IRequest {
